@@ -8,4 +8,4 @@
 export * from './types/mod.ts';
 
 //  Export version
-export * from './version.ts';
+export { VERSION } from './version.ts';

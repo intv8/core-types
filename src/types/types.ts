@@ -27,7 +27,8 @@ export type Primitive = Scalar | undefined;
  *
  * @param T - The type of the class.
  */
-export type Constructor<T> = new (...args: unknown[]) => T;
+// deno-lint-ignore no-explicit-any
+export type Constructor<T> = new (...args: any) => T;
 
 /**
  * Alias for a dictionary, or object, with keys of type `K` and values of type `T`.
@@ -66,7 +67,7 @@ export type Native =
 export type List<T> = T[];
 
 /**
- * Alias for a value that can be either a single value of type `T`, or a `List` of values of type `T`.
+ * Alias for a value that can be either a single value of type `T`, or a {@link List} of values of type `T`.
  *
  * @param T - The type of the value(s).
  */
