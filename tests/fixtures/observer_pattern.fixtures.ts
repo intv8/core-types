@@ -49,6 +49,10 @@ class LocationUnsubscriber implements IDisposable {
     this.#observer = observer;
   }
 
+  get isDisposed(): boolean {
+    return !this.#observers.length;
+  }
+
   dispose(): void {
     const index = this.#observers.indexOf(this.#observer);
 

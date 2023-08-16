@@ -24,2110 +24,6 @@
     }
   },
   {
-    "kind": "interface",
-    "name": "IDisposable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 19,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to dispose of resources associated with the current class."
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "dispose",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 21,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Dispose of resources associated with the current instance."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "IHelpful",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 13,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a property containing the URL to a help page associated with the current class."
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [],
-      "properties": [
-        {
-          "name": "helpUrl",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 15,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "The URL to a help page associated with the current class."
-          },
-          "params": [],
-          "computed": false,
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TCloneable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 29,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to create an instance of a class with the same value as the original instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T Provided for brevity and should always be the current class."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "clone",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 31,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Creates and returns an instance of a class with the same value as the original."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "ThisType",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "T",
-                  "kind": "typeRef",
-                  "typeRef": {
-                    "typeParams": null,
-                    "typeName": "T"
-                  }
-                }
-              ],
-              "typeName": "ThisType"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TComparable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 49,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types the current instance can compare to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "compareTo",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 51,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Compare the current instance to an `other` instance, optionally reversing the equality check."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "other",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            },
-            {
-              "kind": "identifier",
-              "name": "reverse",
-              "optional": true,
-              "tsType": {
-                "repr": "boolean",
-                "kind": "keyword",
-                "keyword": "boolean"
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "ComparisonResult",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "ComparisonResult"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TEquatable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 39,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types the current instance can compare to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "equalTo",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 41,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Compare the current instance to an `other` instance to determine equality."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "other",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "boolean",
-            "kind": "keyword",
-            "keyword": "boolean"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TFormatProvider",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 72,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to format a value of type `T` as a `string`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to format as a `string`."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "format",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 74,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Format a `value` of type `T` as a `string`."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "value",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "any",
-            "kind": "keyword",
-            "keyword": "any"
-          },
-          "default": {
-            "repr": "any",
-            "kind": "keyword",
-            "keyword": "any"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TFormattable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 59,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to format the current class instance as a `string`, optionally using a {@link TFormatProvider}.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types that can format the instance as a `string`."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "format",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 63,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Format the current instance as a `string`, optionally using a {@link TFormatProvider}, `formatProvider`."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "formatProvider",
-              "optional": true,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "",
-            "kind": "union",
-            "union": [
-              {
-                "repr": "TFormatProvider",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "TFormatProvider"
-                }
-              },
-              {
-                "repr": "string",
-                "kind": "keyword",
-                "keyword": "string"
-              }
-            ]
-          },
-          "default": {
-            "repr": "",
-            "kind": "union",
-            "union": [
-              {
-                "repr": "TFormatProvider",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "TFormatProvider"
-                }
-              },
-              {
-                "repr": "string",
-                "kind": "keyword",
-                "keyword": "string"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TObservable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 92,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to push notifications to subscribed {@link TObserver} instances.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to push to subscribed {@link TObserver} instances."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "subscribe",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 94,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Subscribe a `TObserver` to push notifications, returning an `IDisposable` to unsubscribe."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "observer",
-              "optional": false,
-              "tsType": {
-                "repr": "TObserver",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": [
-                    {
-                      "repr": "T",
-                      "kind": "typeRef",
-                      "typeRef": {
-                        "typeParams": null,
-                        "typeName": "T"
-                      }
-                    }
-                  ],
-                  "typeName": "TObserver"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "IDisposable",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "IDisposable"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TObserver",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 102,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to receive push notifications from a {@link TObservable}.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to receive from a {@link TObservable}."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "next",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 105,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a push notification with new data from a {@link TObservable}."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "value",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        },
-        {
-          "name": "error",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 108,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a notification from a {@link TObservable} that an error has occurred."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "error",
-              "optional": false,
-              "tsType": {
-                "repr": "Error",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "Error"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        },
-        {
-          "name": "complete",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 111,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a notification from a {@link TObservable} that it has finished sending notifications."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TSerializable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 82,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to serialize the current class instance to a value of type `T`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type to serialize the instance to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "serialize",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 84,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Serialize the current instance to a value of type `T`."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TServicable",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-      "line": 120,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to retrieve a service of type `T[S]` by identifier `S`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The service type map, mapping service identifiers to service types."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "service",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
-            "line": 126,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Retrieve a service of type `T[S]` by identifier `S`.\n",
-            "tags": [
-              {
-                "kind": "unsupported",
-                "value": "@typeparam S The type of the service identifier."
-              }
-            ]
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "serviceIdentifier",
-              "optional": false,
-              "tsType": {
-                "repr": "S",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "S"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "",
-            "kind": "indexedAccess",
-            "indexedAccess": {
-              "readonly": false,
-              "objType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              },
-              "indexType": {
-                "repr": "S",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "S"
-                }
-              }
-            }
-          },
-          "typeParams": [
-            {
-              "name": "S",
-              "constraint": {
-                "repr": "",
-                "kind": "typeOperator",
-                "typeOperator": {
-                  "operator": "keyof",
-                  "tsType": {
-                    "repr": "T",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "T"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "Record",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "",
-                  "kind": "union",
-                  "union": [
-                    {
-                      "repr": "string",
-                      "kind": "keyword",
-                      "keyword": "string"
-                    },
-                    {
-                      "repr": "number",
-                      "kind": "keyword",
-                      "keyword": "number"
-                    },
-                    {
-                      "repr": "symbol",
-                      "kind": "keyword",
-                      "keyword": "symbol"
-                    }
-                  ]
-                },
-                {
-                  "repr": "any",
-                  "kind": "keyword",
-                  "keyword": "any"
-                }
-              ],
-              "typeName": "Record"
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "AnonymousObject",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for an object with any number of properties, each of which are of unknown, or unspecified, value."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "Record",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "",
-              "kind": "union",
-              "union": [
-                {
-                  "repr": "number",
-                  "kind": "keyword",
-                  "keyword": "number"
-                },
-                {
-                  "repr": "string",
-                  "kind": "keyword",
-                  "keyword": "string"
-                },
-                {
-                  "repr": "symbol",
-                  "kind": "keyword",
-                  "keyword": "symbol"
-                }
-              ]
-            },
-            {
-              "repr": "unknown",
-              "kind": "keyword",
-              "keyword": "unknown"
-            }
-          ],
-          "typeName": "Record"
-        }
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Codebase",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 81,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the integer11 recognized types of codebases.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@see https://partic11e.docs.integer11.org/#/n/codebases"
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "module",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "module"
-            }
-          },
-          {
-            "repr": "package",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "package"
-            }
-          },
-          {
-            "repr": "library",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "library"
-            }
-          },
-          {
-            "repr": "application",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "application"
-            }
-          },
-          {
-            "repr": "extension",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "extension"
-            }
-          },
-          {
-            "repr": "framework",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "framework"
-            }
-          },
-          {
-            "repr": "plugin",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "plugin"
-            }
-          },
-          {
-            "repr": "adapter",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "adapter"
-            }
-          },
-          {
-            "repr": "toolkit",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "toolkit"
-            }
-          },
-          {
-            "repr": "sdk",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "sdk"
-            }
-          },
-          {
-            "repr": "api",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "api"
-            }
-          },
-          {
-            "repr": "platform",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "platform"
-            }
-          },
-          {
-            "repr": "engine",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "engine"
-            }
-          },
-          {
-            "repr": "theme",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "theme"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Constructor",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 31,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for class constructors.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "T",
-          "doc": "- The type of the class."
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "fnOrConstructor",
-        "fnOrConstructor": {
-          "constructor": true,
-          "tsType": {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          },
-          "params": [
-            {
-              "kind": "rest",
-              "arg": {
-                "kind": "identifier",
-                "name": "args",
-                "optional": false,
-                "tsType": null
-              },
-              "tsType": {
-                "repr": "any",
-                "kind": "keyword",
-                "keyword": "any"
-              }
-            }
-          ],
-          "typeParams": []
-        }
-      },
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "DecoratorTarget",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 137,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the types of TypeScript decorator targets."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "class",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "class"
-            }
-          },
-          {
-            "repr": "method",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "method"
-            }
-          },
-          {
-            "repr": "property",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "property"
-            }
-          },
-          {
-            "repr": "parameter",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "parameter"
-            }
-          },
-          {
-            "repr": "accessor",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "accessor"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Defined",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 49,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for value, that if defined, is of type `T`, otherwise is of type `never`.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "T",
-          "doc": "- The type of the value if defined."
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "conditional",
-        "conditionalType": {
-          "checkType": {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          },
-          "extendsType": {
-            "repr": "undefined",
-            "kind": "keyword",
-            "keyword": "undefined"
-          },
-          "trueType": {
-            "repr": "never",
-            "kind": "keyword",
-            "keyword": "never"
-          },
-          "falseType": {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          }
-        }
-      },
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Dictionary",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 39,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for a dictionary, or object, with keys of type `K` and values of type `T`.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "T",
-          "doc": "- The type of the values."
-        },
-        {
-          "kind": "param",
-          "name": "K",
-          "doc": "- The type of the keys."
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "Record",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "K",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "K"
-              }
-            },
-            {
-              "repr": "T",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "T"
-              }
-            }
-          ],
-          "typeName": "Record"
-        }
-      },
-      "typeParams": [
-        {
-          "name": "T"
-        },
-        {
-          "name": "K",
-          "constraint": {
-            "repr": "",
-            "kind": "typeOperator",
-            "typeOperator": {
-              "operator": "keyof",
-              "tsType": {
-                "repr": "AnonymousObject",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "AnonymousObject"
-                }
-              }
-            }
-          },
-          "default": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Falsey",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 17,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for types that are falsey, meaning they are `false`, `0`, the empty string, `null`, or `undefined`."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "false",
-            "kind": "literal",
-            "literal": {
-              "kind": "boolean",
-              "boolean": false
-            }
-          },
-          {
-            "repr": "0",
-            "kind": "literal",
-            "literal": {
-              "kind": "number",
-              "number": 0.0
-            }
-          },
-          {
-            "repr": "",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": ""
-            }
-          },
-          {
-            "repr": "null",
-            "kind": "keyword",
-            "keyword": "null"
-          },
-          {
-            "repr": "undefined",
-            "kind": "keyword",
-            "keyword": "undefined"
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "FileSystemEntry",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 145,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the types of file system entries."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "directory",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "directory"
-            }
-          },
-          {
-            "repr": "file",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "file"
-            }
-          },
-          {
-            "repr": "symlink",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "symlink"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "GenericSoftwareOperation",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 98,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies a generic operation."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "operation",
-        "kind": "literal",
-        "literal": {
-          "kind": "string",
-          "string": "operation"
-        }
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "List",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 67,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for a typed array.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "T",
-          "doc": "- The type of the array elements."
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "array",
-        "array": {
-          "repr": "T",
-          "kind": "typeRef",
-          "typeRef": {
-            "typeParams": null,
-            "typeName": "T"
-          }
-        }
-      },
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Native",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 52,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for all of the native types in JavaScript."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "Primitive",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Primitive"
-            }
-          },
-          {
-            "repr": "Function",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Function"
-            }
-          },
-          {
-            "repr": "Date",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Date"
-            }
-          },
-          {
-            "repr": "Error",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Error"
-            }
-          },
-          {
-            "repr": "RegExp",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "RegExp"
-            }
-          },
-          {
-            "repr": "AnonymousObject",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "AnonymousObject"
-            }
-          },
-          {
-            "repr": "List",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "unknown",
-                  "kind": "keyword",
-                  "keyword": "unknown"
-                }
-              ],
-              "typeName": "List"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "NonPracticableSoftwareOperation",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 108,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the types of non-practicable operations.\n\nNon-practicable operations are those pre-defined by software authors and\ninitiated by a pre-defined schedule or event.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy"
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "process",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "process"
-            }
-          },
-          {
-            "repr": "event",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "event"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Nullish",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 20,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for types that are nullish, meaning they are `null` or `undefined`."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "null",
-            "kind": "keyword",
-            "keyword": "null"
-          },
-          {
-            "repr": "undefined",
-            "kind": "keyword",
-            "keyword": "undefined"
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "NumericFormat",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 151,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the default supported formats for numeric values."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "int",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "int"
-            }
-          },
-          {
-            "repr": "float",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "float"
-            }
-          },
-          {
-            "repr": "time",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "time"
-            }
-          },
-          {
-            "repr": "date",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "date"
-            }
-          },
-          {
-            "repr": "datetime",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "datetime"
-            }
-          },
-          {
-            "repr": "currency",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "currency"
-            }
-          },
-          {
-            "repr": "percentage",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "percentage"
-            }
-          },
-          {
-            "repr": "text",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "text"
-            }
-          },
-          {
-            "repr": "fraction",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "fraction"
-            }
-          },
-          {
-            "repr": "custom",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "custom"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "OneOrMany",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 74,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for a value that can be either a single value of type `T`, or a {@link List} of values of type `T`.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "T",
-          "doc": "- The type of the value(s)."
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          },
-          {
-            "repr": "List",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "T",
-                  "kind": "typeRef",
-                  "typeRef": {
-                    "typeParams": null,
-                    "typeName": "T"
-                  }
-                }
-              ],
-              "typeName": "List"
-            }
-          }
-        ]
-      },
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Parser",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 164,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the default supported parsers for text."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "json",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "json"
-            }
-          },
-          {
-            "repr": "yaml",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "yaml"
-            }
-          },
-          {
-            "repr": "toml",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "toml"
-            }
-          },
-          {
-            "repr": "xml",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "xml"
-            }
-          },
-          {
-            "repr": "datetime",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "datetime"
-            }
-          },
-          {
-            "repr": "custom",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "custom"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "PracticableSoftwareOperation",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 119,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the types of practicable operations.\n\nPracticable operations are those that an end-user of an application may be directly involved.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy"
-        }
-      ]
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "action",
-        "kind": "literal",
-        "literal": {
-          "kind": "string",
-          "string": "action"
-        }
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Primitive",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 23,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for types that are immutable and primitive, meaning they are {@link Scalar}, `null`, or `undefined`."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "Scalar",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Scalar"
-            }
-          },
-          {
-            "repr": "undefined",
-            "kind": "keyword",
-            "keyword": "undefined"
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "Scalar",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 14,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Alias for types that are scalar, meaning can be represented as a single value."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "boolean",
-            "kind": "keyword",
-            "keyword": "boolean"
-          },
-          {
-            "repr": "bigint",
-            "kind": "keyword",
-            "keyword": "bigint"
-          },
-          {
-            "repr": "number",
-            "kind": "keyword",
-            "keyword": "number"
-          },
-          {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          {
-            "repr": "symbol",
-            "kind": "keyword",
-            "keyword": "symbol"
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "SharedSoftwareOperation",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 122,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies the types of operations that can be practicable and non-practicable."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "request",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "request"
-            }
-          },
-          {
-            "repr": "task",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "task"
-            }
-          },
-          {
-            "repr": "workflow",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "workflow"
-            }
-          },
-          {
-            "repr": "build",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "build"
-            }
-          },
-          {
-            "repr": "trigger",
-            "kind": "literal",
-            "literal": {
-              "kind": "string",
-              "string": "trigger"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "typeAlias",
-    "name": "SoftwareOperation",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
-      "line": 130,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Specifies all the types of software operations."
-    },
-    "typeAliasDef": {
-      "tsType": {
-        "repr": "",
-        "kind": "union",
-        "union": [
-          {
-            "repr": "NonPracticableSoftwareOperation",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "NonPracticableSoftwareOperation"
-            }
-          },
-          {
-            "repr": "PracticableSoftwareOperation",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "PracticableSoftwareOperation"
-            }
-          },
-          {
-            "repr": "SharedSoftwareOperation",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "SharedSoftwareOperation"
-            }
-          },
-          {
-            "repr": "GenericSoftwareOperation",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "GenericSoftwareOperation"
-            }
-          }
-        ]
-      },
-      "typeParams": []
-    }
-  },
-  {
     "kind": "enum",
     "name": "bDayOfWeek",
     "location": {
@@ -6378,6 +4274,2131 @@
           }
         }
       ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "IDisposable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 19,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to dispose of resources associated with the current class."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "dispose",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 21,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Dispose of resources associated with the current instance."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "isDisposed",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 24,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "A value indicating whether the current instance has been disposed."
+          },
+          "params": [],
+          "computed": false,
+          "optional": false,
+          "tsType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "typeParams": []
+        }
+      ],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "IHelpful",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 13,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a property containing the URL to a help page associated with the current class."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "helpUrl",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 15,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "The URL to a help page associated with the current class."
+          },
+          "params": [],
+          "computed": false,
+          "optional": false,
+          "tsType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TCloneable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 32,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to create an instance of a class with the same value as the original instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T Provided for brevity and should always be the current class."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "clone",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 34,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Creates and returns an instance of a class with the same value as the original."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "ThisType",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "ThisType"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TComparable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 52,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types the current instance can compare to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "compareTo",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 54,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare the current instance to an `other` instance, optionally reversing the equality check."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "other",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": true,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TEquatable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 42,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types the current instance can compare to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "equalTo",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 44,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare the current instance to an `other` instance to determine equality."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "other",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TFormatProvider",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 75,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to format a value of type `T` as a `string`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to format as a `string`."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "format",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 77,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Format a `value` of type `T` as a `string`."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "value",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "any",
+            "kind": "keyword",
+            "keyword": "any"
+          },
+          "default": {
+            "repr": "any",
+            "kind": "keyword",
+            "keyword": "any"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TFormattable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 62,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to format the current class instance as a `string`, optionally using a {@link TFormatProvider}.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types that can format the instance as a `string`."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "format",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 66,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Format the current instance as a `string`, optionally using a {@link TFormatProvider}, `formatProvider`."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "formatProvider",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "",
+            "kind": "union",
+            "union": [
+              {
+                "repr": "TFormatProvider",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "TFormatProvider"
+                }
+              },
+              {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            ]
+          },
+          "default": {
+            "repr": "",
+            "kind": "union",
+            "union": [
+              {
+                "repr": "TFormatProvider",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "TFormatProvider"
+                }
+              },
+              {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TObservable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 95,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to push notifications to subscribed {@link TObserver} instances.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to push to subscribed {@link TObserver} instances."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "subscribe",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 97,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Subscribe a `TObserver` to push notifications, returning an `IDisposable` to unsubscribe."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "observer",
+              "optional": false,
+              "tsType": {
+                "repr": "TObserver",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": [
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ],
+                  "typeName": "TObserver"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "IDisposable",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IDisposable"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TObserver",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 105,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to receive push notifications from a {@link TObservable}.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to receive from a {@link TObservable}."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "next",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 108,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a push notification with new data from a {@link TObservable}."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "value",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        },
+        {
+          "name": "error",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 111,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a notification from a {@link TObservable} that an error has occurred."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "error",
+              "optional": false,
+              "tsType": {
+                "repr": "Error",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "Error"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        },
+        {
+          "name": "complete",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 114,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a notification from a {@link TObservable} that it has finished sending notifications."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TSerializable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 85,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to serialize the current class instance to a value of type `T`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type to serialize the instance to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "serialize",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 87,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Serialize the current instance to a value of type `T`."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TServicable",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+      "line": 123,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to retrieve a service of type `T[S]` by identifier `S`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The service type map, mapping service identifiers to service types."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "service",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/partic11e/core-types/src/types/interfaces.ts",
+            "line": 129,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Retrieve a service of type `T[S]` by identifier `S`.\n",
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@typeparam S The type of the service identifier."
+              }
+            ]
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "serviceIdentifier",
+              "optional": false,
+              "tsType": {
+                "repr": "S",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "S"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "",
+            "kind": "indexedAccess",
+            "indexedAccess": {
+              "readonly": false,
+              "objType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              },
+              "indexType": {
+                "repr": "S",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "S"
+                }
+              }
+            }
+          },
+          "typeParams": [
+            {
+              "name": "S",
+              "constraint": {
+                "repr": "",
+                "kind": "typeOperator",
+                "typeOperator": {
+                  "operator": "keyof",
+                  "tsType": {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    {
+                      "repr": "symbol",
+                      "kind": "keyword",
+                      "keyword": "symbol"
+                    }
+                  ]
+                },
+                {
+                  "repr": "any",
+                  "kind": "keyword",
+                  "keyword": "any"
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "AnonymousObject",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for an object with any number of properties, each of which are of unknown, or unspecified, value."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "Record",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "union",
+              "union": [
+                {
+                  "repr": "number",
+                  "kind": "keyword",
+                  "keyword": "number"
+                },
+                {
+                  "repr": "string",
+                  "kind": "keyword",
+                  "keyword": "string"
+                },
+                {
+                  "repr": "symbol",
+                  "kind": "keyword",
+                  "keyword": "symbol"
+                }
+              ]
+            },
+            {
+              "repr": "unknown",
+              "kind": "keyword",
+              "keyword": "unknown"
+            }
+          ],
+          "typeName": "Record"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Codebase",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 81,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the integer11 recognized types of codebases.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@see https://partic11e.docs.integer11.org/#/n/codebases"
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "module",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "module"
+            }
+          },
+          {
+            "repr": "package",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "package"
+            }
+          },
+          {
+            "repr": "library",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "library"
+            }
+          },
+          {
+            "repr": "application",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "application"
+            }
+          },
+          {
+            "repr": "extension",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "extension"
+            }
+          },
+          {
+            "repr": "framework",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "framework"
+            }
+          },
+          {
+            "repr": "plugin",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "plugin"
+            }
+          },
+          {
+            "repr": "adapter",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "adapter"
+            }
+          },
+          {
+            "repr": "toolkit",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "toolkit"
+            }
+          },
+          {
+            "repr": "sdk",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "sdk"
+            }
+          },
+          {
+            "repr": "api",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "api"
+            }
+          },
+          {
+            "repr": "platform",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "platform"
+            }
+          },
+          {
+            "repr": "engine",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "engine"
+            }
+          },
+          {
+            "repr": "theme",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "theme"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Constructor",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 31,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for class constructors.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "T",
+          "doc": "- The type of the class."
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "fnOrConstructor",
+        "fnOrConstructor": {
+          "constructor": true,
+          "tsType": {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          },
+          "params": [
+            {
+              "kind": "rest",
+              "arg": {
+                "kind": "identifier",
+                "name": "args",
+                "optional": false,
+                "tsType": null
+              },
+              "tsType": {
+                "repr": "any",
+                "kind": "keyword",
+                "keyword": "any"
+              }
+            }
+          ],
+          "typeParams": []
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "DecoratorTarget",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 137,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the types of TypeScript decorator targets."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "class",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "class"
+            }
+          },
+          {
+            "repr": "method",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "method"
+            }
+          },
+          {
+            "repr": "property",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "property"
+            }
+          },
+          {
+            "repr": "parameter",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "parameter"
+            }
+          },
+          {
+            "repr": "accessor",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "accessor"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Defined",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 49,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for value, that if defined, is of type `T`, otherwise is of type `never`.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "T",
+          "doc": "- The type of the value if defined."
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "conditional",
+        "conditionalType": {
+          "checkType": {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          },
+          "extendsType": {
+            "repr": "undefined",
+            "kind": "keyword",
+            "keyword": "undefined"
+          },
+          "trueType": {
+            "repr": "never",
+            "kind": "keyword",
+            "keyword": "never"
+          },
+          "falseType": {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          }
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Dictionary",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 39,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for a dictionary, or object, with keys of type `K` and values of type `T`.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "T",
+          "doc": "- The type of the values."
+        },
+        {
+          "kind": "param",
+          "name": "K",
+          "doc": "- The type of the keys."
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "Record",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "K",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "K"
+              }
+            },
+            {
+              "repr": "T",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "T"
+              }
+            }
+          ],
+          "typeName": "Record"
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        },
+        {
+          "name": "K",
+          "constraint": {
+            "repr": "",
+            "kind": "typeOperator",
+            "typeOperator": {
+              "operator": "keyof",
+              "tsType": {
+                "repr": "AnonymousObject",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "AnonymousObject"
+                }
+              }
+            }
+          },
+          "default": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Falsey",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 17,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for types that are falsey, meaning they are `false`, `0`, the empty string, `null`, or `undefined`."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "false",
+            "kind": "literal",
+            "literal": {
+              "kind": "boolean",
+              "boolean": false
+            }
+          },
+          {
+            "repr": "0",
+            "kind": "literal",
+            "literal": {
+              "kind": "number",
+              "number": 0.0
+            }
+          },
+          {
+            "repr": "",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": ""
+            }
+          },
+          {
+            "repr": "null",
+            "kind": "keyword",
+            "keyword": "null"
+          },
+          {
+            "repr": "undefined",
+            "kind": "keyword",
+            "keyword": "undefined"
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "FileSystemEntry",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 145,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the types of file system entries."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "directory",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "directory"
+            }
+          },
+          {
+            "repr": "file",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "file"
+            }
+          },
+          {
+            "repr": "symlink",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "symlink"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "GenericSoftwareOperation",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 98,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies a generic operation."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "operation",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "operation"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "List",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 67,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for a typed array.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "T",
+          "doc": "- The type of the array elements."
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "array",
+        "array": {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Native",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 52,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for all of the native types in JavaScript."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "Primitive",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Primitive"
+            }
+          },
+          {
+            "repr": "Function",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Function"
+            }
+          },
+          {
+            "repr": "Date",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Date"
+            }
+          },
+          {
+            "repr": "Error",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Error"
+            }
+          },
+          {
+            "repr": "RegExp",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "RegExp"
+            }
+          },
+          {
+            "repr": "AnonymousObject",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AnonymousObject"
+            }
+          },
+          {
+            "repr": "List",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "unknown",
+                  "kind": "keyword",
+                  "keyword": "unknown"
+                }
+              ],
+              "typeName": "List"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "NonPracticableSoftwareOperation",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 108,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the types of non-practicable operations.\n\nNon-practicable operations are those pre-defined by software authors and\ninitiated by a pre-defined schedule or event.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy"
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "process",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "process"
+            }
+          },
+          {
+            "repr": "event",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "event"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Nullish",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 20,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for types that are nullish, meaning they are `null` or `undefined`."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "null",
+            "kind": "keyword",
+            "keyword": "null"
+          },
+          {
+            "repr": "undefined",
+            "kind": "keyword",
+            "keyword": "undefined"
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "NumericFormat",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 151,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the default supported formats for numeric values."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "int",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "int"
+            }
+          },
+          {
+            "repr": "float",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "float"
+            }
+          },
+          {
+            "repr": "time",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "time"
+            }
+          },
+          {
+            "repr": "date",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "date"
+            }
+          },
+          {
+            "repr": "datetime",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "datetime"
+            }
+          },
+          {
+            "repr": "currency",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "currency"
+            }
+          },
+          {
+            "repr": "percentage",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "percentage"
+            }
+          },
+          {
+            "repr": "text",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "text"
+            }
+          },
+          {
+            "repr": "fraction",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "fraction"
+            }
+          },
+          {
+            "repr": "custom",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "custom"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "OneOrMany",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 74,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for a value that can be either a single value of type `T`, or a {@link List} of values of type `T`.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "T",
+          "doc": "- The type of the value(s)."
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          },
+          {
+            "repr": "List",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "List"
+            }
+          }
+        ]
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Parser",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 164,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the default supported parsers for text."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "json",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "json"
+            }
+          },
+          {
+            "repr": "yaml",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "yaml"
+            }
+          },
+          {
+            "repr": "toml",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "toml"
+            }
+          },
+          {
+            "repr": "xml",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "xml"
+            }
+          },
+          {
+            "repr": "datetime",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "datetime"
+            }
+          },
+          {
+            "repr": "custom",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "custom"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "PracticableSoftwareOperation",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 119,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the types of practicable operations.\n\nPracticable operations are those that an end-user of an application may be directly involved.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy"
+        }
+      ]
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "action",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "action"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Primitive",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 23,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for types that are immutable and primitive, meaning they are {@link Scalar}, `null`, or `undefined`."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "Scalar",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Scalar"
+            }
+          },
+          {
+            "repr": "undefined",
+            "kind": "keyword",
+            "keyword": "undefined"
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Scalar",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 14,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Alias for types that are scalar, meaning can be represented as a single value."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          {
+            "repr": "bigint",
+            "kind": "keyword",
+            "keyword": "bigint"
+          },
+          {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          {
+            "repr": "symbol",
+            "kind": "keyword",
+            "keyword": "symbol"
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "SharedSoftwareOperation",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 122,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the types of operations that can be practicable and non-practicable."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "request",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "request"
+            }
+          },
+          {
+            "repr": "task",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "task"
+            }
+          },
+          {
+            "repr": "workflow",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "workflow"
+            }
+          },
+          {
+            "repr": "build",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "build"
+            }
+          },
+          {
+            "repr": "trigger",
+            "kind": "literal",
+            "literal": {
+              "kind": "string",
+              "string": "trigger"
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "SoftwareOperation",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/core-types/src/types/types.ts",
+      "line": 130,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies all the types of software operations."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "NonPracticableSoftwareOperation",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NonPracticableSoftwareOperation"
+            }
+          },
+          {
+            "repr": "PracticableSoftwareOperation",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "PracticableSoftwareOperation"
+            }
+          },
+          {
+            "repr": "SharedSoftwareOperation",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "SharedSoftwareOperation"
+            }
+          },
+          {
+            "repr": "GenericSoftwareOperation",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "GenericSoftwareOperation"
+            }
+          }
+        ]
+      },
+      "typeParams": []
     }
   }
 ]

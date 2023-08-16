@@ -19,6 +19,9 @@ export interface IHelpful {
 export interface IDisposable {
   /** Dispose of resources associated with the current instance. */
   dispose(): void;
+
+  /** A value indicating whether the current instance has been disposed. */
+  isDisposed: boolean;
 }
 
 /**
