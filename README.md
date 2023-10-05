@@ -1,17 +1,17 @@
 <p align="center">
 <!-- Update log -->
-<img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/img/logotype.svg" />
+<img alt="intv8 logo" height="70" src="https://raw.githubusercontent.com/intv8/.github/main/profile/img/clr/banner.svg" />
 <strong>core-types</strong>
 </p>
 
 <p align="center">
-partic11e is a collection of easy-to-use utility and feature libraries for creating anything you want with the <a href="https://deno.land">Deno</a> runtime.
+intv8 is a collection of easy-to-use utility and feature libraries for creating anything you want with the <a href="https://deno.land">Deno</a> runtime.
 </p>
 
-<h1 align="center">partic11e - core-types</h1>
+<h1 align="center">intv8 - core-types</h1>
 
 <p align="center">
-Commonly used types for the partic11e library.
+Commonly used types for the intv8 library.
 </p>
 
 <p align="center">
@@ -19,21 +19,21 @@ Commonly used types for the partic11e library.
 </p>
 
 <p align="center">
-<sub>Built with ❤ by integer11 and <a href="https://github.com/partic11e/core-types/graphs/contributors">contributors</a></sub>
+<sub>Built with ❤ by integereleven and <a href="https://github.com/intv8/core-types/graphs/contributors">contributors</a></sub>
 </p>
 
 <p align="center">
-<a href="https://github.com/partic11e/core-types/blob/main/CODE_OF_CONDUCT.md">
+<a href="https://github.com/intv8/core-types/blob/main/CODE_OF_CONDUCT.md">
   <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat-square" />
 </a>
-<a href="https://github.com/partic11e/core-types/commits">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/partic11e/core-types?style=flat-square">
+<a href="https://github.com/intv8/core-types/commits">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/intv8/core-types?style=flat-square">
 </a>
-<a href="https://github.com/partic11e/core-types/releases">
-  <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/partic11e/core-types?style=flat-square" />
+<a href="https://github.com/intv8/core-types/releases">
+  <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/intv8/core-types?style=flat-square" />
 </a>
-<a href="https://github.com/partic11e/core-types/issues">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/partic11e/core-types?style=flat-square">
+<a href="https://github.com/intv8/core-types/issues">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/intv8/core-types?style=flat-square">
 </a>
 </p>
 
@@ -59,7 +59,7 @@ To install, you simply need to re-export the library features with your `./deps.
 
 ```ts
 // ./deps.ts
-export * from 'https://denopkg.com/partic11e/core-types/mod.ts';
+export * from 'https://denopkg.com/intv8/core-types/mod.ts';
 //  or specific features
 ```
 
@@ -76,19 +76,19 @@ You can specify a specific branch or release to re-export:
 **Export from a specific branch**
 
 ```ts
-export * from 'https://denopkg.com/partic11e/core-types@dev-fix-06145/mod.ts';
+export * from 'https://denopkg.com/intv8/core-types@dev-fix-06145/mod.ts';
 ```
 
 **Export from a specific release**
 
 ```ts
-export * from 'https://denopkg.com/partic11e/core-types@0.1.0-alpha/mod.ts';
+export * from 'https://denopkg.com/intv8/core-types@0.1.0-alpha/mod.ts';
 ```
 
 **Export the latest release**
 
 ```ts
-export * from 'https://denopkg.com/partic11e/core-types@latest/mod.ts';
+export * from 'https://denopkg.com/intv8/core-types@latest/mod.ts';
 ```
 
 > **Note:** If no branch or tag is specified in the re-export, then it will pull from the main branch, which we only merge into when preparing a release.\
@@ -113,19 +113,18 @@ Contributions are welcome! Take a look at our [contributing guidelines][contribu
 
 [(to top)](#table-of-contents)
 
-The MIT License (MIT) 2022 integer11. Refer to [LICENSE][license] for details.
+The MIT License (MIT) 2022 integereleven. Refer to [LICENSE][license] for details.
 
 <p align="center">
 <img
-  alt="partic11e logo"
-  height="24"
-  src="https://raw.githubusercontent.com/i11n/.github/main/profile/img/logotype.svg"
+  alt="intv8 logo"
+  height="64"
+  src="https://raw.githubusercontent.com/i11n/.github/main/profile/img/frm/logo-open-source.svg"
 />
-<sub>open source</sub>
 </p>
 
 [deno]: https://deno.land "Deno homepage"
-[branches]: https://github.com/partic11e/core-types/branches "partic11e/core-types branches on GitHub"
-[releases]: https://github.com/partic11e/core-types/releases "partic11e/core-types releases on GitHub"
-[contributing]: https://github.com/partic11e/core-types/blob/main/CONTRIBUTING.md "partic11e/core-types contributing guidelines"
-[license]: https://github.com/partic11e/core-types/blob/main/LICENSE "partic11e/core-types license"
+[branches]: https://github.com/intv8/core-types/branches "intv8/core-types branches on GitHub"
+[releases]: https://github.com/intv8/core-types/releases "intv8/core-types releases on GitHub"
+[contributing]: https://github.com/intv8/core-types/blob/main/CONTRIBUTING.md "intv8/core-types contributing guidelines"
+[license]: https://github.com/intv8/core-types/blob/main/LICENSE "intv8/core-types license"

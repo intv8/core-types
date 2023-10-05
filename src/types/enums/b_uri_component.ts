@@ -1,7 +1,7 @@
 /**
  * This file exports the bUriComponent enum.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 /** Specifies the bitwise components of a URI. */

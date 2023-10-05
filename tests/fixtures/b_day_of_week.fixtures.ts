@@ -1,7 +1,7 @@
 /**
  * Test fixtures for the bDayOfWeek enum.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 import { bDayOfWeek } from '../../mod.ts';

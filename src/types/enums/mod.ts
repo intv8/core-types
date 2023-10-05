@@ -1,7 +1,7 @@
 /**
  * This file exports public enums.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 export { bDayOfWeek } from './b_day_of_week.ts';

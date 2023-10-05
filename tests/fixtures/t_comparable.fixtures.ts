@@ -1,7 +1,7 @@
 /**
  * Test fixtures for the TComparable interface.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 import { ComparisonResult, TComparable } from '../../mod.ts';

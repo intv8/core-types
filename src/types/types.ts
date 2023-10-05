@@ -1,10 +1,10 @@
 /**
- * This file exports type aliases used by the the partic11e core-types package
+ * This file exports type aliases used by the the intv8 core-types package
  * and its peer and dependant packages.
  *
  * For type aliases, see ./interfaces.ts.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 /** Alias for an object with any number of properties, each of which are of unknown, or unspecified, value. */
@@ -74,9 +74,9 @@ export type List<T> = T[];
 export type OneOrMany<T> = T | List<T>;
 
 /**
- * Specifies the integer11 recognized types of codebases.
+ * Specifies the integereleven recognized types of codebases.
  *
- * @see https://partic11e.docs.integer11.org/#/n/codebases
+ * @see https://intv8.docs.integereleven.org/#/n/codebases
  */
 export type Codebase =
   | 'module'
@@ -103,7 +103,7 @@ export type GenericSoftwareOperation = 'operation';
  * Non-practicable operations are those pre-defined by software authors and
  * initiated by a pre-defined schedule or event.
  *
- * @see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy
+ * @see https://intv8.docs.integereleven.org/#/n/software-operations?id=philosophy
  */
 export type NonPracticableSoftwareOperation =
   | 'process'
@@ -114,7 +114,7 @@ export type NonPracticableSoftwareOperation =
  *
  * Practicable operations are those that an end-user of an application may be directly involved.
  *
- * @see https://partic11e.docs.integer11.org/#/n/software-operations?id=philosophy
+ * @see https://intv8.docs.integereleven.org/#/n/software-operations?id=philosophy
  */
 export type PracticableSoftwareOperation = 'action';
 

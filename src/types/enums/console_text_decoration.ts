@@ -1,7 +1,7 @@
 /**
  * This file exports the ConsoleTextDecoration enum.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 /** Specifies the console text decoration code integers. */

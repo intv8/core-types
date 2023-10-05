@@ -1,11 +1,10 @@
 /**
- * This file exports types used by the the partic11e core-types package
+ * This file exports types used by the the intv8 core-types package
  * and its peer and dependant packages.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  Export enums
 export {
   bDayOfWeek,
   bMonth,
@@ -25,7 +24,6 @@ export {
   VolumeKeyCode,
 } from './enums.ts';
 
-//  Export interfaces
 export type {
   IDisposable,
   IHelpful,
@@ -40,7 +38,6 @@ export type {
   TServicable,
 } from './interfaces.ts';
 
-//  Export type aliases
 export type {
   AnonymousObject,
   Codebase,

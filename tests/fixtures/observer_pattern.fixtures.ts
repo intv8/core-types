@@ -1,7 +1,7 @@
 /**
  * Test fixtures for the TObserver and TObservable interfaces.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 import { IDisposable, TObservable, TObserver } from '../../mod.ts';

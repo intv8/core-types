@@ -1,10 +1,10 @@
 /**
- * This file exports interfaces used by the the partic11e core-types package
+ * This file exports interfaces used by the the intv8 core-types package
  * and its peer and dependant packages.
  *
  * For type aliases, see ./types.ts.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 import { ComparisonResult } from './enums/comparison_result.ts';

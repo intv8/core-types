@@ -1,7 +1,7 @@
 /**
  * This file exports the bDayOfWeek enum.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 /** Specifies the bitwise days of the week. */

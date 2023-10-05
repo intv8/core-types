@@ -1,7 +1,7 @@
 /**
  * Checks validity of type aliases.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 import { assert, describe, it } from '../dev_deps.ts';
