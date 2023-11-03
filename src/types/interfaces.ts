@@ -128,3 +128,11 @@ export interface TServicable<T extends Record<string | number | symbol, any>> {
    */
   service<S extends keyof T>(serviceIdentifier: S): T[S];
 }
+
+/**
+ * Provides a mechanism to compare two instances of type `T`.
+ */
+export interface TComparer<T> {
+  /** Compare two instances of type `T`. */
+  compare(a: T, b: T, reverse?: boolean): ComparisonResult;
+}

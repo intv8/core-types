@@ -29,6 +29,7 @@ export type {
   IHelpful,
   TCloneable,
   TComparable,
+  TComparer,
   TEquatable,
   TFormatProvider,
   TFormattable,

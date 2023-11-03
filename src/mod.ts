@@ -6,4 +6,6 @@
 
 export * from './types/mod.ts';
 
+export { PropertyComparer } from './comparers.ts';
+
 export { VERSION } from './version.ts';
