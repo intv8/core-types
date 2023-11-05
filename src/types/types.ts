@@ -7,6 +7,10 @@
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
+import { ComparisonResult } from './enums.ts';
+
+import { TComparer } from './interfaces.ts';
+
 /** Alias for an object with any number of properties, each of which are of unknown, or unspecified, value. */
 export type AnonymousObject = Record<number | string | symbol, unknown>;
 
@@ -168,3 +172,9 @@ export type Parser =
   | 'xml'
   | 'datetime'
   | 'custom';
+
+/** A function that compares two values and returns a {@link ComparisonResult}. */
+export type ComparerFn<T> = (a: T, b: T, reverse?: boolean) => ComparisonResult;
+
+/** A {@link TComparer} or {@link ComparerFn} to compare two values. */
+export type Comparer<T> = ComparerFn<T> | TComparer<T>;

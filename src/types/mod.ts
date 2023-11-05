@@ -42,6 +42,8 @@ export type {
 export type {
   AnonymousObject,
   Codebase,
+  Comparer,
+  ComparerFn,
   Constructor,
   DecoratorTarget,
   Defined,

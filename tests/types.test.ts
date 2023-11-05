@@ -9,6 +9,7 @@ import { assert, describe, it } from '../dev_deps.ts';
 import {
   AnonymousObject,
   Codebase,
+  Comparer,
   Constructor,
   Defined,
   Dictionary,
@@ -187,6 +188,11 @@ const _softwareOperationTask: SoftwareOperation = 'task';
 const _softwareOperationWorkflow: SoftwareOperation = 'workflow';
 const _softwareOperationBuild: SoftwareOperation = 'build';
 const _softwareOperationTrigger: SoftwareOperation = 'trigger';
+
+const _comparer1: Comparer<number> = (a, b) => a - b;
+const _comparer2: Comparer<number> = {
+  compare: (a, b) => a - b,
+};
 
 describe('type aliases', () => {
   it('should be valid', () => {

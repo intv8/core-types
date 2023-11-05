@@ -9,6 +9,8 @@
 
 import { ComparisonResult } from './enums/comparison_result.ts';
 
+import { Comparer } from './types.ts';
+
 /** Provides a property containing the URL to a help page associated with the current class. */
 export interface IHelpful {
   /** The URL to a help page associated with the current class. */
@@ -129,10 +131,14 @@ export interface TServicable<T extends Record<string | number | symbol, any>> {
   service<S extends keyof T>(serviceIdentifier: S): T[S];
 }
 
-/**
- * Provides a mechanism to compare two instances of type `T`.
- */
+/** Provides a mechanism to compare two instances of type `T`. */
 export interface TComparer<T> {
-  /** Compare two instances of type `T`. */
-  compare(a: T, b: T, reverse?: boolean): ComparisonResult;
+  /** Compare two instances of type `T`, returning a {@link ComparisonResult}. */
+  compare(a: T, b: T, reverse: boolean): ComparisonResult;
+}
+
+/** Provides a mechanism to sort an instances properties or indices. */
+export interface TSortable<T> {
+  /** Sorts an instance properties or indices, optionally in reverse.  */
+  sort(comparer: Comparer<T>, reverse?: boolean): void;
 }

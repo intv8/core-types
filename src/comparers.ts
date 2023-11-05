@@ -7,6 +7,13 @@
 import { ComparisonResult, type TComparer } from './types/mod.ts';
 
 export class PropertyComparer<T> implements TComparer<T> {
+  public static for<T>(
+    property: keyof T,
+    reverse = false,
+  ): PropertyComparer<T> {
+    return new PropertyComparer<T>(property, reverse);
+  }
+
   constructor(
     private readonly property: keyof T,
     private readonly defaultReverse: boolean = false,
