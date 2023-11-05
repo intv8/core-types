@@ -1,5 +1,29 @@
 [
   {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/version.ts",
+      "line": 9,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the intv8 core-types package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.1",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.1"
+        }
+      },
+      "kind": "const"
+    }
+  },
+  {
     "kind": "typeAlias",
     "name": "AnonymousObject",
     "location": {
@@ -1365,983 +1389,6 @@
         ]
       },
       "typeParams": []
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "IDisposable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 21,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to dispose of resources associated with the current class."
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "dispose",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 23,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Dispose of resources associated with the current instance."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [
-        {
-          "name": "isDisposed",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 26,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "A value indicating whether the current instance has been disposed."
-          },
-          "params": [],
-          "computed": false,
-          "optional": false,
-          "tsType": {
-            "repr": "boolean",
-            "kind": "keyword",
-            "keyword": "boolean"
-          },
-          "typeParams": []
-        }
-      ],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "IHelpful",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 15,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a property containing the URL to a help page associated with the current class."
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [],
-      "properties": [
-        {
-          "name": "helpUrl",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 17,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "The URL to a help page associated with the current class."
-          },
-          "params": [],
-          "computed": false,
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TCloneable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 34,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to create an instance of a class with the same value as the original instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T Provided for brevity and should always be the current class."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "clone",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 36,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Creates and returns an instance of a class with the same value as the original."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "ThisType",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "T",
-                  "kind": "typeRef",
-                  "typeRef": {
-                    "typeParams": null,
-                    "typeName": "T"
-                  }
-                }
-              ],
-              "typeName": "ThisType"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TComparable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 54,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types the current instance can compare to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "compareTo",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 56,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Compare the current instance to an `other` instance, optionally reversing the equality check."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "other",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            },
-            {
-              "kind": "identifier",
-              "name": "reverse",
-              "optional": true,
-              "tsType": {
-                "repr": "boolean",
-                "kind": "keyword",
-                "keyword": "boolean"
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "ComparisonResult",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "ComparisonResult"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TComparer",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 135,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to compare two instances of type `T`."
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "compare",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 137,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Compare two instances of type `T`, returning a {@link ComparisonResult}."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "a",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            },
-            {
-              "kind": "identifier",
-              "name": "b",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            },
-            {
-              "kind": "identifier",
-              "name": "reverse",
-              "optional": false,
-              "tsType": {
-                "repr": "boolean",
-                "kind": "keyword",
-                "keyword": "boolean"
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "ComparisonResult",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "ComparisonResult"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TEquatable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 44,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types the current instance can compare to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "equalTo",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 46,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Compare the current instance to an `other` instance to determine equality."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "other",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "boolean",
-            "kind": "keyword",
-            "keyword": "boolean"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TFormatProvider",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 77,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to format a value of type `T` as a `string`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to format as a `string`."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "format",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 79,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Format a `value` of type `T` as a `string`."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "value",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "any",
-            "kind": "keyword",
-            "keyword": "any"
-          },
-          "default": {
-            "repr": "any",
-            "kind": "keyword",
-            "keyword": "any"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TFormattable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 64,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to format the current class instance as a `string`, optionally using a {@link TFormatProvider}.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The types that can format the instance as a `string`."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "format",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 68,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Format the current instance as a `string`, optionally using a {@link TFormatProvider}, `formatProvider`."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "formatProvider",
-              "optional": true,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "",
-            "kind": "union",
-            "union": [
-              {
-                "repr": "TFormatProvider",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "TFormatProvider"
-                }
-              },
-              {
-                "repr": "string",
-                "kind": "keyword",
-                "keyword": "string"
-              }
-            ]
-          },
-          "default": {
-            "repr": "",
-            "kind": "union",
-            "union": [
-              {
-                "repr": "TFormatProvider",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "TFormatProvider"
-                }
-              },
-              {
-                "repr": "string",
-                "kind": "keyword",
-                "keyword": "string"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TObservable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 97,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to push notifications to subscribed {@link TObserver} instances.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to push to subscribed {@link TObserver} instances."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "subscribe",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 99,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Subscribe a `TObserver` to push notifications, returning an `IDisposable` to unsubscribe."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "observer",
-              "optional": false,
-              "tsType": {
-                "repr": "TObserver",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": [
-                    {
-                      "repr": "T",
-                      "kind": "typeRef",
-                      "typeRef": {
-                        "typeParams": null,
-                        "typeName": "T"
-                      }
-                    }
-                  ],
-                  "typeName": "TObserver"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "IDisposable",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "IDisposable"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TObserver",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 107,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to receive push notifications from a {@link TObservable}.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type of the value to receive from a {@link TObservable}."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "next",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 110,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a push notification with new data from a {@link TObservable}."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "value",
-              "optional": false,
-              "tsType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        },
-        {
-          "name": "error",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 113,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a notification from a {@link TObservable} that an error has occurred."
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "error",
-              "optional": false,
-              "tsType": {
-                "repr": "Error",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "Error"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        },
-        {
-          "name": "complete",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 116,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Receive a notification from a {@link TObservable} that it has finished sending notifications."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "void",
-            "kind": "keyword",
-            "keyword": "void"
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TSerializable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 87,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to serialize the current class instance to a value of type `T`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The type to serialize the instance to."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "serialize",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 89,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Serialize the current instance to a value of type `T`."
-          },
-          "optional": false,
-          "params": [],
-          "returnType": {
-            "repr": "T",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "T"
-            }
-          },
-          "typeParams": []
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ]
-    }
-  },
-  {
-    "kind": "interface",
-    "name": "TServicable",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-      "line": 125,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Provides a mechanism to retrieve a service of type `T[S]` by identifier `S`.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@typeparam T The service type map, mapping service identifiers to service types."
-        }
-      ]
-    },
-    "interfaceDef": {
-      "extends": [],
-      "methods": [
-        {
-          "name": "service",
-          "kind": "method",
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
-            "line": 131,
-            "col": 2
-          },
-          "jsDoc": {
-            "doc": "Retrieve a service of type `T[S]` by identifier `S`.\n",
-            "tags": [
-              {
-                "kind": "unsupported",
-                "value": "@typeparam S The type of the service identifier."
-              }
-            ]
-          },
-          "optional": false,
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "serviceIdentifier",
-              "optional": false,
-              "tsType": {
-                "repr": "S",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "S"
-                }
-              }
-            }
-          ],
-          "returnType": {
-            "repr": "",
-            "kind": "indexedAccess",
-            "indexedAccess": {
-              "readonly": false,
-              "objType": {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              },
-              "indexType": {
-                "repr": "S",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "S"
-                }
-              }
-            }
-          },
-          "typeParams": [
-            {
-              "name": "S",
-              "constraint": {
-                "repr": "",
-                "kind": "typeOperator",
-                "typeOperator": {
-                  "operator": "keyof",
-                  "tsType": {
-                    "repr": "T",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "T"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "callSignatures": [],
-      "indexSignatures": [],
-      "typeParams": [
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "Record",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": [
-                {
-                  "repr": "",
-                  "kind": "union",
-                  "union": [
-                    {
-                      "repr": "string",
-                      "kind": "keyword",
-                      "keyword": "string"
-                    },
-                    {
-                      "repr": "number",
-                      "kind": "keyword",
-                      "keyword": "number"
-                    },
-                    {
-                      "repr": "symbol",
-                      "kind": "keyword",
-                      "keyword": "symbol"
-                    }
-                  ]
-                },
-                {
-                  "repr": "any",
-                  "kind": "keyword",
-                  "keyword": "any"
-                }
-              ],
-              "typeName": "Record"
-            }
-          }
-        }
-      ]
     }
   },
   {
@@ -6598,18 +5645,1001 @@
     }
   },
   {
+    "kind": "interface",
+    "name": "IDisposable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 21,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to dispose of resources associated with the current class."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "dispose",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 23,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Dispose of resources associated with the current instance."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "isDisposed",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 26,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "A value indicating whether the current instance has been disposed."
+          },
+          "params": [],
+          "computed": false,
+          "optional": false,
+          "tsType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "typeParams": []
+        }
+      ],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "IHelpful",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a property containing the URL to a help page associated with the current class."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "helpUrl",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 17,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "The URL to a help page associated with the current class."
+          },
+          "params": [],
+          "computed": false,
+          "optional": false,
+          "tsType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TCloneable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 34,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to create an instance of a class with the same value as the original instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T Provided for brevity and should always be the current class."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "clone",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 36,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Creates and returns an instance of a class with the same value as the original."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "ThisType",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "ThisType"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TComparable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 54,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types the current instance can compare to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "compareTo",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 56,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare the current instance to an `other` instance, optionally reversing the equality check."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "other",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": true,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TComparer",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 135,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare two instances of type `T`."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "compare",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 137,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare two instances of type `T`, returning a {@link ComparisonResult}."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "a",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "b",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TEquatable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 44,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare the current class instance to another instance.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types the current instance can compare to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "equalTo",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 46,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare the current instance to an `other` instance to determine equality."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "other",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TFormatProvider",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 77,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to format a value of type `T` as a `string`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to format as a `string`."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "format",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 79,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Format a `value` of type `T` as a `string`."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "value",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "any",
+            "kind": "keyword",
+            "keyword": "any"
+          },
+          "default": {
+            "repr": "any",
+            "kind": "keyword",
+            "keyword": "any"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TFormattable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 64,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to format the current class instance as a `string`, optionally using a {@link TFormatProvider}.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The types that can format the instance as a `string`."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "format",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 68,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Format the current instance as a `string`, optionally using a {@link TFormatProvider}, `formatProvider`."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "formatProvider",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "",
+            "kind": "union",
+            "union": [
+              {
+                "repr": "TFormatProvider",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "TFormatProvider"
+                }
+              },
+              {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            ]
+          },
+          "default": {
+            "repr": "",
+            "kind": "union",
+            "union": [
+              {
+                "repr": "TFormatProvider",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "TFormatProvider"
+                }
+              },
+              {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TObservable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 97,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to push notifications to subscribed {@link TObserver} instances.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to push to subscribed {@link TObserver} instances."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "subscribe",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 99,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Subscribe a `TObserver` to push notifications, returning an `IDisposable` to unsubscribe."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "observer",
+              "optional": false,
+              "tsType": {
+                "repr": "TObserver",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": [
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ],
+                  "typeName": "TObserver"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "IDisposable",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IDisposable"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TObserver",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 107,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to receive push notifications from a {@link TObservable}.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type of the value to receive from a {@link TObservable}."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "next",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 110,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a push notification with new data from a {@link TObservable}."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "value",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        },
+        {
+          "name": "error",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 113,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a notification from a {@link TObservable} that an error has occurred."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "error",
+              "optional": false,
+              "tsType": {
+                "repr": "Error",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "Error"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        },
+        {
+          "name": "complete",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 116,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Receive a notification from a {@link TObservable} that it has finished sending notifications."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TSerializable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 87,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to serialize the current class instance to a value of type `T`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The type to serialize the instance to."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "serialize",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 89,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Serialize the current instance to a value of type `T`."
+          },
+          "optional": false,
+          "params": [],
+          "returnType": {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TServicable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+      "line": 125,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to retrieve a service of type `T[S]` by identifier `S`.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@typeparam T The service type map, mapping service identifiers to service types."
+        }
+      ]
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "service",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/types/interfaces.ts",
+            "line": 131,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Retrieve a service of type `T[S]` by identifier `S`.\n",
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@typeparam S The type of the service identifier."
+              }
+            ]
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "serviceIdentifier",
+              "optional": false,
+              "tsType": {
+                "repr": "S",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "S"
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "",
+            "kind": "indexedAccess",
+            "indexedAccess": {
+              "readonly": false,
+              "objType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              },
+              "indexType": {
+                "repr": "S",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "S"
+                }
+              }
+            }
+          },
+          "typeParams": [
+            {
+              "name": "S",
+              "constraint": {
+                "repr": "",
+                "kind": "typeOperator",
+                "typeOperator": {
+                  "operator": "keyof",
+                  "tsType": {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    {
+                      "repr": "symbol",
+                      "kind": "keyword",
+                      "keyword": "symbol"
+                    }
+                  ]
+                },
+                {
+                  "repr": "any",
+                  "kind": "keyword",
+                  "keyword": "any"
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
     "kind": "class",
     "name": "PropertyComparer",
     "location": {
       "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-      "line": 9,
+      "line": 10,
       "col": 0
     },
     "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Sorts a list of object by a specific property."
+    },
     "classDef": {
       "isAbstract": false,
       "constructors": [
         {
+          "jsDoc": {
+            "doc": "Creates a new instance of the PropertyComparer class."
+          },
           "accessibility": null,
           "hasBody": true,
           "name": "constructor",
@@ -6656,7 +6686,7 @@
           ],
           "location": {
             "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 17,
+            "line": 20,
             "col": 2
           }
         }
@@ -6665,6 +6695,9 @@
       "indexSignatures": [],
       "methods": [
         {
+          "jsDoc": {
+            "doc": "Returns a new instance of the PropertyComparer class."
+          },
           "accessibility": "public",
           "optional": false,
           "isAbstract": false,
@@ -6733,11 +6766,14 @@
           },
           "location": {
             "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 10,
+            "line": 12,
             "col": 2
           }
         },
         {
+          "jsDoc": {
+            "doc": "Compares two objects by the property."
+          },
           "accessibility": "public",
           "optional": false,
           "isAbstract": false,
@@ -6803,7 +6839,7 @@
           },
           "location": {
             "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 22,
+            "line": 26,
             "col": 2
           }
         }
@@ -6834,30 +6870,6 @@
         }
       ],
       "superTypeParams": []
-    }
-  },
-  {
-    "kind": "variable",
-    "name": "VERSION",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/version.ts",
-      "line": 9,
-      "col": 13
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "The current release version of the intv8 core-types package."
-    },
-    "variableDef": {
-      "tsType": {
-        "repr": "0.0.1",
-        "kind": "literal",
-        "literal": {
-          "kind": "string",
-          "string": "0.0.1"
-        }
-      },
-      "kind": "const"
     }
   }
 ]
