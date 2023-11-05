@@ -1,268 +1,5 @@
 [
   {
-    "kind": "class",
-    "name": "PropertyComparer",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-      "line": 9,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "classDef": {
-      "isAbstract": false,
-      "constructors": [
-        {
-          "accessibility": null,
-          "hasBody": true,
-          "name": "constructor",
-          "params": [
-            {
-              "accessibility": "private",
-              "kind": "identifier",
-              "name": "property",
-              "optional": false,
-              "tsType": {
-                "repr": "",
-                "kind": "typeOperator",
-                "typeOperator": {
-                  "operator": "keyof",
-                  "tsType": {
-                    "repr": "T",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "T"
-                    }
-                  }
-                }
-              },
-              "readonly": true
-            },
-            {
-              "accessibility": "private",
-              "kind": "assign",
-              "left": {
-                "kind": "identifier",
-                "name": "defaultReverse",
-                "optional": false,
-                "tsType": {
-                  "repr": "boolean",
-                  "kind": "keyword",
-                  "keyword": "boolean"
-                }
-              },
-              "right": "[UNSUPPORTED]",
-              "tsType": null,
-              "readonly": true
-            }
-          ],
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 17,
-            "col": 2
-          }
-        }
-      ],
-      "properties": [],
-      "indexSignatures": [],
-      "methods": [
-        {
-          "accessibility": "public",
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": true,
-          "name": "for",
-          "kind": "method",
-          "functionDef": {
-            "params": [
-              {
-                "kind": "identifier",
-                "name": "property",
-                "optional": false,
-                "tsType": {
-                  "repr": "",
-                  "kind": "typeOperator",
-                  "typeOperator": {
-                    "operator": "keyof",
-                    "tsType": {
-                      "repr": "T",
-                      "kind": "typeRef",
-                      "typeRef": {
-                        "typeParams": null,
-                        "typeName": "T"
-                      }
-                    }
-                  }
-                }
-              },
-              {
-                "kind": "assign",
-                "left": {
-                  "kind": "identifier",
-                  "name": "reverse",
-                  "optional": false,
-                  "tsType": null
-                },
-                "right": "[UNSUPPORTED]",
-                "tsType": null
-              }
-            ],
-            "returnType": {
-              "repr": "PropertyComparer",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": [
-                  {
-                    "repr": "T",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "T"
-                    }
-                  }
-                ],
-                "typeName": "PropertyComparer"
-              }
-            },
-            "hasBody": true,
-            "isAsync": false,
-            "isGenerator": false,
-            "typeParams": [
-              {
-                "name": "T"
-              }
-            ]
-          },
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 10,
-            "col": 2
-          }
-        },
-        {
-          "accessibility": "public",
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": false,
-          "name": "compare",
-          "kind": "method",
-          "functionDef": {
-            "params": [
-              {
-                "kind": "identifier",
-                "name": "a",
-                "optional": false,
-                "tsType": {
-                  "repr": "T",
-                  "kind": "typeRef",
-                  "typeRef": {
-                    "typeParams": null,
-                    "typeName": "T"
-                  }
-                }
-              },
-              {
-                "kind": "identifier",
-                "name": "b",
-                "optional": false,
-                "tsType": {
-                  "repr": "T",
-                  "kind": "typeRef",
-                  "typeRef": {
-                    "typeParams": null,
-                    "typeName": "T"
-                  }
-                }
-              },
-              {
-                "kind": "assign",
-                "left": {
-                  "kind": "identifier",
-                  "name": "reverse",
-                  "optional": false,
-                  "tsType": {
-                    "repr": "boolean",
-                    "kind": "keyword",
-                    "keyword": "boolean"
-                  }
-                },
-                "right": "[UNSUPPORTED]",
-                "tsType": null
-              }
-            ],
-            "returnType": {
-              "repr": "ComparisonResult",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "ComparisonResult"
-              }
-            },
-            "hasBody": true,
-            "isAsync": false,
-            "isGenerator": false,
-            "typeParams": []
-          },
-          "location": {
-            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
-            "line": 22,
-            "col": 2
-          }
-        }
-      ],
-      "extends": null,
-      "implements": [
-        {
-          "repr": "TComparer",
-          "kind": "typeRef",
-          "typeRef": {
-            "typeParams": [
-              {
-                "repr": "T",
-                "kind": "typeRef",
-                "typeRef": {
-                  "typeParams": null,
-                  "typeName": "T"
-                }
-              }
-            ],
-            "typeName": "TComparer"
-          }
-        }
-      ],
-      "typeParams": [
-        {
-          "name": "T"
-        }
-      ],
-      "superTypeParams": []
-    }
-  },
-  {
-    "kind": "variable",
-    "name": "VERSION",
-    "location": {
-      "filename": "file:///C:/repos/intv8/core-types/src/version.ts",
-      "line": 9,
-      "col": 13
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "The current release version of the intv8 core-types package."
-    },
-    "variableDef": {
-      "tsType": {
-        "repr": "0.0.1",
-        "kind": "literal",
-        "literal": {
-          "kind": "string",
-          "string": "0.0.1"
-        }
-      },
-      "kind": "const"
-    }
-  },
-  {
     "kind": "typeAlias",
     "name": "AnonymousObject",
     "location": {
@@ -6858,6 +6595,269 @@
           }
         }
       ]
+    }
+  },
+  {
+    "kind": "class",
+    "name": "PropertyComparer",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
+      "line": 9,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "accessibility": "private",
+              "kind": "identifier",
+              "name": "property",
+              "optional": false,
+              "tsType": {
+                "repr": "",
+                "kind": "typeOperator",
+                "typeOperator": {
+                  "operator": "keyof",
+                  "tsType": {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                }
+              },
+              "readonly": true
+            },
+            {
+              "accessibility": "private",
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "defaultReverse",
+                "optional": false,
+                "tsType": {
+                  "repr": "boolean",
+                  "kind": "keyword",
+                  "keyword": "boolean"
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null,
+              "readonly": true
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
+            "line": 17,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "for",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "property",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "kind": "assign",
+                "left": {
+                  "kind": "identifier",
+                  "name": "reverse",
+                  "optional": false,
+                  "tsType": null
+                },
+                "right": "[UNSUPPORTED]",
+                "tsType": null
+              }
+            ],
+            "returnType": {
+              "repr": "PropertyComparer",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                ],
+                "typeName": "PropertyComparer"
+              }
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "T"
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
+            "line": 10,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "compare",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "a",
+                "optional": false,
+                "tsType": {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              },
+              {
+                "kind": "identifier",
+                "name": "b",
+                "optional": false,
+                "tsType": {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              },
+              {
+                "kind": "assign",
+                "left": {
+                  "kind": "identifier",
+                  "name": "reverse",
+                  "optional": false,
+                  "tsType": {
+                    "repr": "boolean",
+                    "kind": "keyword",
+                    "keyword": "boolean"
+                  }
+                },
+                "right": "[UNSUPPORTED]",
+                "tsType": null
+              }
+            ],
+            "returnType": {
+              "repr": "ComparisonResult",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "ComparisonResult"
+              }
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/core-types/src/comparers.ts",
+            "line": 22,
+            "col": 2
+          }
+        }
+      ],
+      "extends": null,
+      "implements": [
+        {
+          "repr": "TComparer",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": [
+              {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            ],
+            "typeName": "TComparer"
+          }
+        }
+      ],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/core-types/src/version.ts",
+      "line": 9,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the intv8 core-types package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.1",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.1"
+        }
+      },
+      "kind": "const"
     }
   }
 ]
